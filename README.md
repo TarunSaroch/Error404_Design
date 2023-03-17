@@ -1,5 +1,5 @@
 ## Error 404 Design ##
-Upload the custom page to your website: Upload the custom 404 error page to your website's root directory or to a specific directory where you want the error page to appear.
+Upload the custom 404 error page to your website's root directory or to a specific directory where you want the error page to appear.
 
 Edit the .htaccess file: Open the .htaccess file in a text editor and add the following code:
 

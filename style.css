@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+body{
+    background: #FF4F63;
+    font-family: 'Space Grotesk';
+    color: black;
+    font-weight: 400;
+}
+.section{
+    overflow: hidden;
+}
+.top-section{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.container{
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.text-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+}
+.data-items{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lost{
+    padding-top: 10px;
+    font-size: 80px;
+    font-weight: 700;
+}
+.button1{
+    padding-top: 35px;
+}
+.button2{
+    background: black;
+    padding: .80rem 1.5rem;
+    border-radius: 5rem;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+.text{
+    padding-top: 10px;
+}
+.floating img{
+    padding-left: 50px;
+    animation: floating 6s ease-in-out infinite;
+}
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-16px); }
+    100% { transform: translateY(0); }
+}
+.shadow{
+    width: 130px;
+    height: 24px;
+    background-color: hsla(38, 21%, 19%, .16);
+    margin: 0 auto;
+    border-radius: 50%;
+    filter: blur(7px);
+    animation: shadow 1.8s infinite alternate;
+}
+@keyframes shadow {
+    0% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(.85, .85);
+    }
+  }
+.page-footer{
+    font-size: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 970px) {
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .button1{
+        text-align: center;
+    }
+    .data-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .floating img{
+        height: 300px;
+        width: 300px;
+        padding-left: -20px;
+        padding-top: 50px;
+        animation: floating 6s ease-in-out infinite;
+    }
+}
